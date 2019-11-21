@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Parsel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-white text-center">
+      <div class="conrainer my-5">
+            <h1>PARSEL LINK SHORTNER</h1>
+            <h2>Paste Link Below and HIt Parsel</h2>
+            <form action="/" method="POST">
+              <input type="text" name="url" id="url">
+              <input class="btn btn-success" type="submit" value="Parsel">
+          </form>
+          {% if shrinkedUrl %}
+          <span>Here's your URL: <a href="http://0.0.0.0:8000/{{shrinkedUrl}}" target="_blank">0.0.0.0:8000/{{shrinkedUrl}}</a></span>
+          {% endif%}  
+          
+      </div>
+      
+    
+   </body>
+</html>
